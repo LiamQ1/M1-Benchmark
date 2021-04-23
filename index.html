@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M1-Benchmark</title> <!-- EX1 --> 
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1 class="heading">M1-Benchmark</h1> <!--EX2-->
+
+<ol>
+    <li>HTML5</li>
+    <li>CSS</li>        <!--EX3-->
+    <li>JavaScript</li>
+</ol>
+<table id="myTable">
+    
+    <tr class="border_bottom">
+        <td>1</td>
+        <td><a href="https://strive.school/"><img src="https://global-uploads.webflow.com/5bf64c08cc98dd2c68779d68/5bf64c08cc98ddd6a577ab9b_html5_developer-p-1080x.jpeg" alt="" border=3 height=75 width=75></img></a></a></td>
+        <td>1</td>
+        <td><a href="https://strive.school/"><img src="https://global-uploads.webflow.com/5bf64c08cc98dd2c68779d68/5bf64c08cc98ddd6a577ab9b_html5_developer-p-1080x.jpeg" alt="" border=3 height=75 width=75></img></a></td>
+        <td>1</td>
+    </tr>
+    <tr class="border_bottom">
+        <td colspan="2">1</td> <!--EX7-->
+        <td><a href="https://strive.school/"><img src="https://global-uploads.webflow.com/5bf64c08cc98dd2c68779d68/5bf64c08cc98ddd6a577ab9b_html5_developer-p-1080x.jpeg" alt="" border=3 height=75 width=75></img></a></a></td>
+        <td>1</td>
+        <td><a href="https://strive.school/"><img src="https://global-uploads.webflow.com/5bf64c08cc98dd2c68779d68/5bf64c08cc98ddd6a577ab9b_html5_developer-p-1080x.jpeg" alt="" border=3 height=75 width=75></img></a></td>
+        <td>1</td>
+    </tr>
+    <tr class="border_bottom">                          <!--EX4, EX5, EX6--> 
+        <td>1</td>
+        <td><a href="https://strive.school/"><img src="https://global-uploads.webflow.com/5bf64c08cc98dd2c68779d68/5bf64c08cc98ddd6a577ab9b_html5_developer-p-1080x.jpeg" alt="" border=3 height=75 width=75></img></a></a></td>
+        <td>1</td>
+        <td><a href="https://strive.school/"><img src="https://global-uploads.webflow.com/5bf64c08cc98dd2c68779d68/5bf64c08cc98ddd6a577ab9b_html5_developer-p-1080x.jpeg" alt="" border=3 height=75 width=75></img></a></td>
+        <td>1</td>
+    </tr>
+    <tr class="border_bottom">
+        <td>1</td>
+        <td><a href="https://strive.school/"><img src="https://global-uploads.webflow.com/5bf64c08cc98dd2c68779d68/5bf64c08cc98ddd6a577ab9b_html5_developer-p-1080x.jpeg" alt="" border=3 height=75 width=75></img></a></a></td>
+        <td>1</td>
+        <td><a href="https://strive.school/"><img src="https://global-uploads.webflow.com/5bf64c08cc98dd2c68779d68/5bf64c08cc98ddd6a577ab9b_html5_developer-p-1080x.jpeg" alt="" border=3 height=75 width=75></img></a></td>
+        <td>1</td>
+    </tr>
+    <tr class="border_bottom" class="fdfdf">
+        <td>1</td>
+        <td><a href="https://strive.school/"><img src="https://global-uploads.webflow.com/5bf64c08cc98dd2c68779d68/5bf64c08cc98ddd6a577ab9b_html5_developer-p-1080x.jpeg" alt="" border=3 height=75 width=75></img></a></a></td>
+        <td>1</td>
+        <td><a href="https://strive.school/"><img src="https://global-uploads.webflow.com/5bf64c08cc98dd2c68779d68/5bf64c08cc98ddd6a577ab9b_html5_developer-p-1080x.jpeg" alt="" border=3 height=75 width=75></img></a></td>
+        <td>1</td>
+    </tr>
+</table>
+<div id="container"> <!--EX9-->
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum quisquam mollitia, consectetur nobis similique sequi ducimus. Atque nobis, non saepe totam iste at ipsam vero hic esse quos debitis animi?</p>
+<ul>
+    <li>Unordere Lis</li>
+    <li>norered Lit</li>
+    <li>Uordered ist</li>
+    <li>Unorderd List</li>
+    <li>Unodered List</li>
+    <li>Unordere ist</li>
+    <li>Unordered List</li>
+    <li>Unorered List</li>
+    <li>Unordered List</li>
+</ul>
+</div>
+<footer id="footer">
+    Liam Quain® Ireland 2021.
+</footer>
+<script>
+    let container = document.getElementById("container") // EX31
+console.log(container)
+
+let allTd = document.getElementsByTagName("td") //EX32
+
+//EX33
+
+
+document.title = "New M1 Benchmark Title" //EX34
+
+let addRow = function() {
+  let table = document.getElementById("myTable");
+  let row = table.insertRow(0);
+  let cell1 = row.insertCell(0);
+  let cell2 = row.insertCell(1);
+  let cell3 = row.insertCell(2);                            //EX35
+  let cell4 = row.insertCell(3);
+  let cell5 = row.insertCell(4);
+  cell1.innerHTML = "New DOM Cell1";
+  cell2.innerHTML = "New DOM Cell2";
+  cell3.innerHTML = "New DOM Cell3";
+  cell4.innerHTML = "New DOM Cell4";
+  cell5.innerHTML = "New DOM Cell5";
+}
+addRow()
+
+/* let addClass = function(){
+    let rows = document.getElementsByTagName("tr")
+    rows.classList.addClass("test")
+    console.log("rows")
+} */
+
+let addClass = document.querySelectorAll('tr');
+
+for(var i = 0 ; i < addClass.length ; i++) {
+  if(addClass[i].textContent.trim() > '') {              //EX36
+    addClass[i].classList.add('test');
+  }
+}
+
+let newBg = document.querySelectorAll('a')
+for(var i = 0 ; i < newBg.length ; i++) {
+  if(newBg[i].textContent.trim() > '') {              //EX36
+    newBg[i].style.backgroundColor = "red";
+  }
+}
+
+</script>
+
+
+</body>
+</html>
