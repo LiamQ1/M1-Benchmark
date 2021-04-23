@@ -1,6 +1,8 @@
 body { 
+ display: flex;
+ justify-content: center;
  text-align: center;
- max-width: fit-content; /* EX11 */
+ max-width: 960px; /* EX11 */
  margin: auto;
 }
   
@@ -12,7 +14,7 @@ a {
     color: aqua;  /* EX13 */
 }
  #footer {
-position: absolute;
+position: fixed;
 text-align: center;
 bottom: 0;
 width: 100%;
@@ -26,6 +28,7 @@ background-color: rgb(4, 153, 240)
 }
 
 table {
+    margin-top: 100px;
     border-radius: 25px;
   border: 2px solid #5c9e00;
   padding: 20px;                  /* EX15 */
@@ -59,5 +62,11 @@ table tr td {
 tr.border_bottom td {
     border-bottom: 4px dotted rgb(204, 51, 51); /* EX20 */
   }
-
-
+  .vl {
+    border-left: 6px solid green;
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+  }
